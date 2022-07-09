@@ -5,11 +5,144 @@
       </div>
     </div>
   
-  <div class="modal"></div>
+  <div class="modal">
+  
+  
+<div class='modal__content'>
+  <button type='button' class='modal__button' data-action='close-modal'></button>
+ 
+  
+    <div class='modal-container-info'>
+      <div class='modal-container modal-wrapp'>
+        <h3 class='modal-header'>INFO</h3>
+  
+          <p class='modal-text-info'>{{info}}</p>
+     
+      </div>
+      
+      <div class='modal-container'>
+        <h3 class='modal-header'>WHEN</h3>
+        <p class='modal-text'>{{dates.start.localDate}}</p>
+        <p class='modal-text'>{{dates.start.localTime}} ({{dates.timezone}})</p>
+      </div>
+      
+      <div class='modal-container'>
+        <h3 class='modal-header'>WHERE</h3>
+        <p class='modal-text'>{{dates.timezone}}</p>
+        <p class='modal-text'>{{_embedded.venues.0.address.line1}}</p>
+      </div>
+      
+      <div class='modal-container'>
+        <h3 class='modal-header'>WHO</h3>
+        <p class='modal-text wrapper-who'>{{name}}</p>
+      </div>
+      
+      <div class='modal-container wrapper-who-price'>
+        <h3 class='modal-header'>PRICE</h3>
+        {{#if priceRanges}}
+        
+          <p class='modal-text wrapper-price'><img class='svg-ticket' src='{{ticketSvg}}' alt='' />
+            {{priceRanges.0.type}}
+            {{priceRanges.0.min}}-{{priceRanges.0.max}}
+            {{priceRanges.0.currency}}</p>
+      
+
+        <a href='{{urlPrice}}' target='_blank'>
+          <button type='button' class='modal-btn-buy'>BUY TICKETS</button>
+        </a>
+        
+        <div class='svg-ticket'>
+          {{#if vipPrice}}
+            <p class='modal-text wrapper-price'>
+              <img class='svg-ticket' src='{{ticketSvg}}' alt='' />
+         
+        
+        
+          <a href='{{urlVip}}' target='_blank'>
+            <button type='button' class='modal-btn-buy'>BUY TICKETS</button>
+          </a>
+        {{else}}
+          <a href='{{urlVip}}' target='_blank'>
+            <button type='button' class='modal-btn-buy disable' disabled>BUY TICKETS</button>
+          </a>
+    
+      </div>
+      <button type='button' class='modal-btn-more' data-author='{{authorName}}'>MORE FROM THIS
+        AUTHOR</button>
+    </div>
+  </div>
+</div>
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <div class="pagination"></div>
   
 </main>
-
 
 
 
