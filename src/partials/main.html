@@ -11,18 +11,20 @@
 <div class='modal__content'>
   <button type='button' class='modal__button' data-action='close-modal'></button>
   
-  <div class='svg-container'>
-    <img class='modal-svg' src='' alt='{{name}}' />
-  </div>
-  
-  
-  
+ 
   
   <div class='modal-section'>
     <picture class='modal-img-section'>
       <img class='modal-img' src='' alt='{{name}}' />
     </picture>
     
+    
+    <a>
+            <img src="./images/modal/modal-photo-desktop.png" srcset="./images/modal/modal-photo-tablet.png" alt="logo-event-booster">
+        </a>
+    
+
+  
     
     <div class='modal-container-info'>
       <div class='modal-container'>
@@ -50,28 +52,31 @@
       <div class='modal-container'>
         <h3 class='modal-header'>PRICE</h3>
         
-          <p class='modal-text wrapper-price'><img class='svg-ticket' src='' alt='' />
+          <p class='modal-text wrapper-price'><img class='jpg-ticket' src="./images/modal/ticket2.jpg" alt="price" />
         </p>
        
 
-        <a href='{{urlPrice}}' target='_blank'>
+        
+        
+        
+      
           <button type='button' class='modal-btn-buy'>BUY TICKETS</button>
-        </a>
+       
         
         <div class='svg-ticket'>
             <p class='modal-text wrapper-price'>
-              <img class='svg-ticket' src='' alt='' />
+              <img class='jpg-ticket' src="./images/modal/ticket2.jpg" alt="price" />
               </p>
           
         </div>
        
-          <a href='{{urlVip}}' target='_blank'>
+      
             <button type='button' class='modal-btn-buy'>BUY TICKETS</button>
-          </a>
+        
      
          
       </div>
-      <button type='button' class='modal-btn-more' data-author='{{authorName}}'>MORE FROM THIS
+      <button type='button' class='modal-btn-more' data-author='authorName'>MORE FROM THIS
         AUTHOR</button>
     </div>
   </div>
