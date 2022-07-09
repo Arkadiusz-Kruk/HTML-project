@@ -5,7 +5,78 @@
       </div>
     </div>
   
-  <div class="modal"></div>
+  <div class="modal">
+  
+ 
+<div class='modal__content'>
+  <button type='button' class='modal__button' data-action='close-modal'></button>
+  
+  <div class='svg-container'>
+    <img class='modal-svg' src='{{imgSmallUrl.url}}' alt='{{name}}' />
+  </div>
+  
+  
+  
+  
+  <div class='modal-section'>
+    <picture class='modal-img-section'>
+      <img class='modal-img' src='{{imgBigUrl.url}}' alt='{{name}}' />
+    </picture>
+    
+    
+    <div class='modal-container-info'>
+      <div class='modal-container'>
+        <h3 class='modal-header'>INFO</h3>
+       
+          <p class='modal-text-info'></p>
+        
+          
+      </div>
+      
+      <div class='modal-container'>
+        <h3 class='modal-header'>WHEN</h3>
+        <p class='modal-text'></p>
+        <p class='modal-text'></p>
+      </div>
+      <div class='modal-container'>
+        <h3 class='modal-header'>WHERE</h3>
+        <p class='modal-text'></p>
+        <p class='modal-text'></p>
+      </div>
+      <div class='modal-container'>
+        <h3 class='modal-header'>WHO</h3>
+        <p class='modal-text'></p>
+      </div>
+      <div class='modal-container'>
+        <h3 class='modal-header'>PRICE</h3>
+        
+          <p class='modal-text wrapper-price'><img class='svg-ticket' src='{{ticketSvg}}' alt='' />
+        </p>
+       
+
+        <a href='{{urlPrice}}' target='_blank'>
+          <button type='button' class='modal-btn-buy'>BUY TICKETS</button>
+        </a>
+        
+        <div class='svg-ticket'>
+            <p class='modal-text wrapper-price'>
+              <img class='svg-ticket' src='{{ticketSvg}}' alt='' />
+              </p>
+          
+        </div>
+       
+          <a href='{{urlVip}}' target='_blank'>
+            <button type='button' class='modal-btn-buy'>BUY TICKETS</button>
+          </a>
+     
+         
+      </div>
+      <button type='button' class='modal-btn-more' data-author='{{authorName}}'>MORE FROM THIS
+        AUTHOR</button>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -73,7 +144,7 @@
   
   
   
-  
+  </div>
   
   <div class="pagination"></div>
   
