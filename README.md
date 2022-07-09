@@ -1,2 +1,2 @@
-# HTML-project
-HTML project
+# JS-team-projekt-grupa-4
+ 
